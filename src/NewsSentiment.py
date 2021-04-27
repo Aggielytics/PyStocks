@@ -8,9 +8,10 @@ from google.cloud import language_v1 as language
 
 class StockNews:
     def __init__(self) -> None:
-        self.apiKey = "695420fc828541cb8b3b3589c778a226"
+        # self.apiKey = "695420fc828541cb8b3b3589c778a226"
+        self.apiKey = "ed5bb80dde3d432da44a675baeb164c9"
         self.newsapi = NewsApiClient(api_key=self.apiKey)
-        self.credentials, project_id = google.auth.load_credentials_from_file(r"GoogleCreds.json")
+        self.credentials, project_id = google.auth.load_credentials_from_file(r"C:\Users\coleman-c\PycharmProjects\PyStocks\src\GoogleCreds.json")
         self.newsArticles = None
         self.client = language.LanguageServiceClient(credentials=self.credentials)
 
@@ -42,11 +43,11 @@ class StockNews:
         return SentimentScore
 
     def get_sentiment_score(self):
-        descCombined = ""
+        sentiment = []
         for desc in self.newsArticles['description']:
-            descCombined = descCombined + "\r" + desc
-        score = self.getSentiment(descCombined)
-        if score >= 0:
+            sentiment.append(self.getSentiment(desc))
+        score = statistics.mean(sentiment)
+        if score > 0:
             rating = 'Positve'
         else:
             rating = 'Negative'
@@ -54,4 +55,4 @@ class StockNews:
         score = score * 100
         print(rating)
         print(score)
-        return rating, round(score, 0)
+        return rating, round(score, 1)
