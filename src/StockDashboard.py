@@ -386,7 +386,6 @@ def update_data(dropDownValue, buttonClicks, searchSymbol):
 def update_news_artilces(company):
     news = StockNews()
     dfNews = news.getNewsArticles(company, 6, 30)
-    #print(f"New articles: {dfNews.shape[0]}")
     newsCards = get_news_rows(dfNews)
     sentiment, sentimentScore = news.get_sentiment_score()
     if sentimentScore >= 0:
