@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "stalwart-elixir-303702",
+  "private_key_id": "c54878cde7754620fcf2c325e54f39df8c7cda77",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrfbB9uMi1+NBx\nHLwz96y6NHsiuhm5Y3mtNK7ShvSkobl/fRG6O4F1GI4y1r6ycbNgHM9mc3zBQ46q\nn1Riw7mKVc2M6EF7bV/ob9eFf/WXom+GR9pn7ZLxrg9kP24wYzWADIOiUiQyXkzW\nIHTW+PsQd8FcqsdZiwrbShBHiH7HPQphye6gMKDQ+7Cdlhi/Pm7luLPCr1JLAYDj\n/jJuvFo8Onq1bhBVSxIYFxQCEcXW9Gklz2K/qzVzeJ3HZtmRpPLbIgClMddiYzEe\n74Hmp3MJvF5yRWiqs45CjvHJUlD8l9JaHw/PoT8PIG6474Pfopkwb93v6KdNark5\nSfpU/P6FAgMBAAECggEAAcuz4qkh7uffVOPiY5/rDtsYU/2DYfHU9xeXYgx4ONYZ\nsWhPnHXdjeqXKJifkBJJOM8sa8v3STXKI2a+NTeL9JMf7yMKdn6nc7FiHhuAKJmS\nleMgOhjegknajufsITUUvRXEdhlqmB1tLAvUdWDPjjVW0L/YDQu77h5pK7qV60On\nt4xonkw006QbWoQlqUfXeJUSXO5/WyHBwVnvEFpJBvJyHOpYhjpvHw9IDPhUgY51\nKcXJuIN2icpqOcglVA4TaaMyoOOnESqTvqYazbxXB2cqhv/QeXQ6xur12WROLm7r\nhFt2stTg/xDbatZoapAzVoq2BXIbce8Fkb2t5Hk9CQKBgQDgE55Yo6tadBWBfS23\n0PCHknWNB37NNG+vLLFH9ICwrtQBHGMWdVTZlOFpvGWAApPzMwT90rf7koN08j2I\nUgeXMmzvrtMvz+TSRaeLOSE659rjPi7PLJ2zR7umRtY89cZ5wPewXVm1GKPI1DUc\nCYl4XD7G9kZqqrUZx/EVGLWZzQKBgQDD7DMrx21ycFJ2JSnr0prXx3LryhHqmb64\nNy7q7h5sYUxW9Ot5/LOYeto6i6mrnnxbYGPPaOr/9mzOe63khm9kiE4B6jv6XKDo\n+fp7Wo/ps/J7DGsadwPFGhKE64gU3sVtYpqHWFL7G8CkJGWhY4fdf2ZRZBbaasP7\n2/HK+OVfmQKBgFisitpLEtF95NDUh9YZUkZkWC6SS8TLPnNVPWbbRF4nIXC7Gh9W\nGVjtiPK+AnDRFFmG1C/aRsLArVMHVgBvbd+Qrfl/9sUSAVyRAgefeR4FiOKqxf1o\ni5PaDFF18Ow42u1txtc9afW3pYEhMU9CGuvNnW5BIYauvXJRZH9TwvH1AoGADG+x\nz9WY3OrEUTuKra1wpsHCSbVJ7dpUgNz/3WnABKEod1yUlem0fLlPoOe8nWgx/Jrh\nuwit4hGCVpkDML5X08nTKcv0gq/ehutXOv1EpVEG00i2g7eKRbih9E3/FVQOtCLO\nLEku+0GHuOOWj+gBd83ecMwppzOfvRz4/ClQZgECgYEAyz76qDSG3+aT7vlpPTaJ\nDnD4TdTIgIULJgD6+YCmYCnt9caAm8P6uogm41M4Riv+wbDyw/p/BRhZ9tvzPb3q\nd/b+BrcuA+qTNHUtfqeGB6Ex3u13TpvDMSnitnK21C1QDqnHkRSm82KKpNG2imJg\nEeG+ZOxMkYswzCeaEKIMH5o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tranlater@stalwart-elixir-303702.iam.gserviceaccount.com",
+  "client_id": "101505582591590573775",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tranlater%40stalwart-elixir-303702.iam.gserviceaccount.com"
+}
