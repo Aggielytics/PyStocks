@@ -1,11 +1,11 @@
 # PyStocks
 
-##Goals
+## Goals
  
 Extend stocks homework assignment in week 6 (Stocks GUI)
 This project will use a python framework to take advantage of web based graphical user interface, able to run in browser on any device. This new GUI will transform all modules from tkinter to a HTML, still using python.
 
-##Features
+## Features
 Favorite list of 20 Stocks 
 Ability to type and search for a new stock by symbol
 Stock Price, Closed, Preview Close, Percentage, Volume from AlphaVantage
