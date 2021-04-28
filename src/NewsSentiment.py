@@ -11,7 +11,7 @@ class StockNews:
         # self.apiKey = "695420fc828541cb8b3b3589c778a226"
         self.apiKey = "ed5bb80dde3d432da44a675baeb164c9"
         self.newsapi = NewsApiClient(api_key=self.apiKey)
-        self.credentials, project_id = google.auth.load_credentials_from_file(r"C:\Users\coleman-c\PycharmProjects\PyStocks\src\GoogleCreds.json")
+        self.credentials, project_id = google.auth.load_credentials_from_file(r"GoogleCreds.json")
         self.newsArticles = None
         self.client = language.LanguageServiceClient(credentials=self.credentials)
 
