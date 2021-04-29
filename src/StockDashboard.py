@@ -212,7 +212,7 @@ app.layout = html.Div([
                     dbc.Row(
                         [
                             dbc.Col(html.Img(src=PLOTLY_LOGO, height="30px")),
-                            dbc.Col(dbc.NavbarBrand("Stock Monkeys", className="ml-2")),
+                            dbc.Col(dbc.NavbarBrand("PyStocks", className="ml-2")),
                         ],
                         align="center",
                         no_gutters=True,
