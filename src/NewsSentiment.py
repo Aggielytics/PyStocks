@@ -4,18 +4,14 @@ from datetime import datetime, timedelta
 import statistics
 import google.auth
 from google.cloud import language_v1 as language
-import os
-
 
 class StockNews:
     def __init__(self) -> None:
-        path = os.getcwd()
-        print(path)
         # self.apiKey = "d8374c4ebc1f49c9bcf9c1b89df7c65a" # Jim
         # self.apiKey = "695420fc828541cb8b3b3589c778a226" # Bilal
         self.apiKey = "ed5bb80dde3d432da44a675baeb164c9"  # Clay
         self.newsapi = NewsApiClient(api_key=self.apiKey)
-        self.credentials, project_id = google.auth.load_credentials_from_file(path + "\GoogleCreds.json")
+        self.credentials, project_id = google.auth.load_credentials_from_file('GoogleCreds.json')
         self.newsArticles = None
         self.client = language.LanguageServiceClient(credentials=self.credentials)
 
