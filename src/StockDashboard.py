@@ -1,8 +1,4 @@
-# Before running this app, install the following
-# pip install dash
-# pip install dash-bootstrap-components
-
-import dash  # pip install dash
+import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
@@ -96,7 +92,6 @@ def make_graph_card(openPrice, prevClosePrice, header):
 def get_stockCards(ticker):
     prevClose = ticker.info['previousClose']
     openPrice = ticker.info['open']
-    #print(f"open: {openPrice} close: {prevClose}")
     if prevClose > openPrice:
         priceColor = 'danger'
     else:
@@ -212,7 +207,7 @@ app.layout = html.Div([
                     dbc.Row(
                         [
                             dbc.Col(html.Img(src=PLOTLY_LOGO, height="30px")),
-                            dbc.Col(dbc.NavbarBrand("PyStocks", className="ml-2")),
+                            dbc.Col(dbc.NavbarBrand("Stock Monkeys", className="ml-2")),
                         ],
                         align="center",
                         no_gutters=True,
@@ -347,6 +342,8 @@ def update_data(dropDownValue, buttonClicks, searchSymbol):
     elif (searchSymbol == ""):
         symbol = dropDownValue
 
+    #print(f"dr:{dropDownValue}, btn:{buttonClicks}, src:{searchSymbol}, sym:{symbol}")
+
     try:
         ticker = yf.Ticker(symbol)
         dfHistory = ticker.history(period="3y")
@@ -386,6 +383,7 @@ def update_data(dropDownValue, buttonClicks, searchSymbol):
 def update_news_artilces(company):
     news = StockNews()
     dfNews = news.getNewsArticles(company, 6, 30)
+    #print(f"New articles: {dfNews.shape[0]}")
     newsCards = get_news_rows(dfNews)
     sentiment, sentimentScore = news.get_sentiment_score()
     if sentimentScore >= 0:
@@ -411,4 +409,3 @@ def toggle_navbar_collapse(n, is_open):
 
 if __name__ == "__main__":
     app.run_server(debug=False, host='0.0.0.0', port=8080)
-    # app.run_server(debug=True)
