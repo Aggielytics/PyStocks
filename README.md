@@ -1,4 +1,4 @@
-# Stocks
+# PyStocks
 
 ## Executive Summary
 ![img.png](Images/Goals.png)
