@@ -7,7 +7,7 @@ from google.cloud import language_v1 as language
 
 class StockNews:
     def __init__(self) -> None:
-        self.apiKey = "ed5bb80dde3d432da44a675baeb164c9"  # Use your own NewsAPI Key
+        self.apiKey = "******************************"  # Use your own NewsAPI Key
         self.newsapi = NewsApiClient(api_key=self.apiKey)
         self.credentials, project_id = google.auth.load_credentials_from_file('GoogleCreds.json')
         self.newsArticles = None
